@@ -1,15 +1,16 @@
-REECE MARTIN PORTFOLIO — V6
+REECE MARTIN PORTFOLIO — V7
 
-Open index.html to preview locally.
+New in V7:
+- Real in-page contact form submission.
+- Floating chat-style message box.
+- Case study popups.
+- Before/after progression slider.
+- Fullscreen image lightbox.
+- Tool badges.
+- Copy email button.
+- Back-to-top button.
+- Social preview metadata, favicon, and custom 404 page.
 
-V6 additions:
-- New "Beyond Worlds" section featuring six public assets / creator tools.
-- VRCMods achievement strip showing 1,500+ community downloads.
-- Featured asset cards: Forklift, TouchPadV1, Bass Guitar, Aincrad Crystal,
-  Japanese School and Avi / Showcase Room.
-- New "Find My Work" creator network linking to VRChat, VRCMods, YouTube,
-  TikTok, Gumroad and Linktree.
-- Existing worlds, video embeds, contact form and V5 polish retained.
-
-The 1,500+ figure is deliberately rounded so the static portfolio does not
-become outdated as download counts grow.
+IMPORTANT: after deploying V7, send one test message through the form.
+FormSubmit should email rmartin@stephen-martin.com to activate/confirm the form.
+Confirm it once, then future messages should deliver directly from the website.
