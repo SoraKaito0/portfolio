@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://formsubmit.co; frame-src https://www.tiktok.com; object-src 'none'; base-uri 'none'; form-action https://formsubmit.co; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="format-detection" content="telephone=no">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Reece Martin — 3D Environment Artist, VRChat Creator and Junior 3D Artist based in Scotland." />
@@ -34,12 +37,13 @@
   </header>
 
   <main id="top">
-    <section class="hero" style="--hero:url('assets/cathedral-hero.png')">
+    <section class="hero">
+      <img class="hero-bg" src="assets/cathedral-angle-3.png" alt="The Celestial Church environment">
       <div class="hero-shade"></div>
       <div class="hero-content reveal">
-        <p class="eyebrow">3D ENVIRONMENT ARTIST · VRCHAT CREATOR</p>
+        <p class="eyebrow">3D ENVIRONMENT ARTIST</p>
         <h1>Reece Martin</h1>
-        <p class="hero-copy">I build immersive real-time environments, atmospheric virtual spaces and interactive worlds using Blender, Unity and the VRChat SDK.</p>
+        <p class="hero-copy">Environment art presented for fast recruiter review: strongest work first, followed by modelling, materials, lighting and technical breakdowns.</p>
         <div class="hero-actions">
           <a class="btn primary" href="#work">View selected work</a>
         </div>
@@ -52,6 +56,42 @@
       <a class="scroll-cue" href="#work">Scroll to work ↓</a>
     </section>
 
+    <section id="v9-featured" class="section v10-featured">
+      <div class="section-head reveal">
+        <p class="eyebrow">V10 · FEATURED ENVIRONMENTS</p>
+        <h2>Strongest work first. Details when you want them.</h2>
+        <p>The main page stays visual and quick to scan. Click a featured project to open its story, contribution, technical information and available breakdowns.</p>
+      </div>
+
+      <article class="v10-case reveal">
+        <div class="v10-case-hero case-study-btn" data-case="celestial" role="button" tabindex="0">
+          <img src="assets/cathedral-hero.png" alt="The Celestial Church environment">
+          <div class="v10-case-overlay"><div class="v10-case-copy"><span>01 · FEATURED ENVIRONMENT · 03 OCT 2025</span><h2>The Celestial Church</h2><p>Gothic architecture, atmosphere, lighting and VRChat environment design.</p><b class="more-pill">CLICK FOR PROJECT DETAILS + BREAKDOWNS</b></div></div>
+        </div>
+        <div class="v10-project-meta"><div><span>Software</span><strong>Blender · Unity · Substance Painter</strong></div><div><span>My modelling</span><strong>~90%</strong></div><div><span>Platform</span><strong>PC + Quest</strong></div><div><span>Triangles</span><strong>432,351</strong></div></div>
+      </article>
+
+      <article class="v10-case reveal">
+        <div class="v10-case-hero case-study-btn" data-case="always-home" role="button" tabindex="0">
+          <img src="assets/always-home-2.jpg" alt="Always Home environment">
+          <div class="v10-case-overlay"><div class="v10-case-copy"><span>02 · FEATURED ENVIRONMENT · 23 APR 2026</span><h2>Always Home</h2><p>A personal industrial apartment environment built as a comfortable shared VRChat home.</p><b class="more-pill">CLICK FOR PROJECT DETAILS + MATERIAL WORK</b></div></div>
+        </div>
+        <div class="v10-project-meta"><div><span>Software</span><strong>Blender · Unity · Substance Painter</strong></div><div><span>My modelling</span><strong>~90%</strong></div><div><span>Platform</span><strong>PC + Quest</strong></div><div><span>Triangles</span><strong>1,114,851</strong></div></div>
+      </article>
+
+      <article class="v10-case reveal">
+        <div class="v10-case-hero case-study-btn" data-case="city-series" role="button" tabindex="0">
+          <img src="assets/city-2023-4.jpg" alt="City Apartment final 2023 environment">
+          <div class="v10-case-overlay"><div class="v10-case-copy"><span>03 · ENVIRONMENT EVOLUTION · 2021—2023</span><h2>City Apartment Series</h2><p>One environment idea rebuilt three times as my layout, lighting and environment-art skills developed.</p><b class="more-pill">CLICK TO EXPLORE THE FULL EVOLUTION</b></div></div>
+        </div>
+        <div class="city-timeline">
+          <div class="city-era case-study-btn" data-case="city-2021"><img src="assets/city-2021-1.jpg"><div><small>23 AUG 2021</small><h3>City Apartment Classic</h3><p>The first version and starting point of the series.</p><b class="more-pill">OPEN 2021 PROJECT</b></div></div>
+          <div class="city-era case-study-btn" data-case="city-2022"><img src="assets/city-2022-2.png"><div><small>14 FEB 2022</small><h3>City Apartment</h3><p>The second generation with a darker, more developed interior.</p><b class="more-pill">OPEN 2022 PROJECT</b></div></div>
+          <div class="city-era case-study-btn" data-case="city-2023"><img src="assets/city-2023-4.jpg"><div><small>22 AUG 2023</small><h3>City Apartment · Final</h3><p>The third and final rebuild of the concept.</p><b class="more-pill">OPEN 2023 PROJECT</b></div></div>
+        </div>
+      </article>
+    </section>
+
     <section id="work" class="section">
       <div class="section-head reveal">
         <p class="eyebrow">SELECTED WORK</p>
@@ -61,19 +101,19 @@
 
       <div class="project-grid">
         <article class="project-card featured reveal">
-          <img src="assets/always-home-2.png" alt="Gothic cathedral VRChat environment" />
+          <img src="assets/cathedral-hero.png" alt="The Celestial Church VRChat environment" />
           <div class="project-overlay">
             <div>
               <p class="project-kicker">VRCHAT WORLD · FEATURED</p>
               <h3>The Celestial Church</h3><div class="tool-tags"><span>Unity</span><span>Blender</span><span>VRChat SDK</span><span>Lighting</span></div>
               <p>Grand architectural composition, warm candlelight, volumetric-style light shafts and a dramatic ceremonial layout.</p>
             </div>
-            <div class="project-actions"><button class="case-study-btn" data-case="celestial" type="button">Case study</button><a href="https://vrchat.com/home/world/wrld_a0b7a10c-58d0-48cb-b706-cd70f18e6245" target="_blank" rel="noopener">Open world ↗</a></div>
+            <div class="project-actions"><button class="case-study-btn" data-case="celestial" type="button">Case study</button><a href="https://vrchat.com/home/world/wrld_a0b7a10c-58d0-48cb-b706-cd70f18e6245" target="_blank" rel="noopener noreferrer">Open world ↗</a></div>
           </div>
         </article>
 
         <article class="project-card reveal">
-          <img src="assets/loft.png" alt="Industrial loft VRChat environment" />
+          <img src="assets/city-2021-2.jpg" alt="Industrial loft VRChat environment" />
           <div class="project-overlay">
             <div>
               <p class="project-kicker">ENVIRONMENT EVOLUTION</p>
@@ -83,23 +123,23 @@
             <div class="project-actions">
               <button class="case-study-btn" data-case="city-series" type="button">Case study</button>
               <div class="inline-links">
-              <a href="https://vrchat.com/home/world/wrld_3a5861b6-04fc-4a94-ac12-6e038881779a" target="_blank" rel="noopener">V1</a>
-              <a href="https://vrchat.com/home/world/wrld_067a1e12-0854-4926-b923-cbbc36b40b44" target="_blank" rel="noopener">V2</a>
-              <a href="https://vrchat.com/home/world/wrld_5d021b7f-f4ea-4b8c-a367-ea5b64d6db5d" target="_blank" rel="noopener">V3</a>
+              <a href="https://vrchat.com/home/world/wrld_3a5861b6-04fc-4a94-ac12-6e038881779a" target="_blank" rel="noopener noreferrer">V1</a>
+              <a href="https://vrchat.com/home/world/wrld_067a1e12-0854-4926-b923-cbbc36b40b44" target="_blank" rel="noopener noreferrer">V2</a>
+              <a href="https://vrchat.com/home/world/wrld_5d021b7f-f4ea-4b8c-a367-ea5b64d6db5d" target="_blank" rel="noopener noreferrer">V3</a>
               </div>
             </div>
           </div>
         </article>
 
         <article class="project-card reveal">
-          <img src="assets/industrial.png" alt="Industrial city apartment VRChat environment" />
+          <img src="assets/always-home-2.jpg" alt="Industrial city apartment VRChat environment" />
           <div class="project-overlay">
             <div>
               <p class="project-kicker">VRCHAT WORLD</p>
               <h3>Always Home</h3><div class="tool-tags"><span>Unity</span><span>Blender</span><span>VRChat SDK</span></div>
               <p>Compact interior design using exposed pipework, brick, timber and a city-night backdrop to create a lived-in industrial style.</p>
             </div>
-            <div class="project-actions"><button class="case-study-btn" data-case="always-home" type="button">Case study</button><a href="https://vrchat.com/home/world/wrld_982338bf-95bd-44b3-9835-889b6d5310d0" target="_blank" rel="noopener">Open world ↗</a></div>
+            <div class="project-actions"><button class="case-study-btn" data-case="always-home" type="button">Case study</button><a href="https://vrchat.com/home/world/wrld_982338bf-95bd-44b3-9835-889b6d5310d0" target="_blank" rel="noopener noreferrer">Open world ↗</a></div>
           </div>
         </article>
 
@@ -111,31 +151,31 @@
               <h3>Forever Home</h3><div class="tool-tags"><span>Unity</span><span>VRChat SDK</span><span>Interactive Systems</span></div>
               <p>A darker comfort-focused environment with weather, sound, camera/post-processing controls and ambient lighting.</p>
             </div>
-            <div class="project-actions"><button class="case-study-btn" data-case="forever-home" type="button">Case study</button><a href="https://vrchat.com/home/world/wrld_46211cba-4b17-4576-aeca-20b83bb3c550" target="_blank" rel="noopener">Open world ↗</a></div>
+            <div class="project-actions"><button class="case-study-btn" data-case="forever-home" type="button">Case study</button><a href="https://vrchat.com/home/world/wrld_46211cba-4b17-4576-aeca-20b83bb3c550" target="_blank" rel="noopener noreferrer">Open world ↗</a></div>
           </div>
         </article>
 
         <article class="project-card reveal">
-          <img src="assets/soras-home.png" alt="Sora's Home VRChat world" />
+          <img src="assets/soras-home-3.png" alt="Sora's Home VRChat world" />
           <div class="project-overlay">
             <div>
               <p class="project-kicker">VRCHAT WORLD</p>
               <h3>Sora’s Home</h3><div class="tool-tags"><span>Unity</span><span>Blender</span><span>VRChat SDK</span></div>
               <p>A modern personal home environment focused on comfortable social spaces, sunset views and clean interior presentation.</p>
             </div>
-            <div class="project-actions"><button class="case-study-btn" data-case="soras-home" type="button">Case study</button><a href="https://vrchat.com/home/world/wrld_07100f48-be87-47c9-afa9-6af2c5a1c4f2" target="_blank" rel="noopener">Open world ↗</a></div>
+            <div class="project-actions"><button class="case-study-btn" data-case="soras-home" type="button">Case study</button><a href="https://vrchat.com/home/world/wrld_07100f48-be87-47c9-afa9-6af2c5a1c4f2" target="_blank" rel="noopener noreferrer">Open world ↗</a></div>
           </div>
         </article>
 
         <article class="project-card reveal">
-          <img src="assets/vfx.png" alt="Experimental VFX world with green energy beam" />
+          <img src="assets/pharanoa.png" alt="Experimental VFX world with green energy beam" />
           <div class="project-overlay">
             <div>
               <p class="project-kicker">EXPERIMENTAL VFX</p>
               <h3>Pharanoa</h3><div class="tool-tags"><span>Unity</span><span>VFX</span><span>Emissive Lighting</span></div>
               <p>An abstract lighting and effects experiment using emissive elements, a focused energy beam and high-contrast atmosphere.</p>
             </div>
-            <div class="project-actions"><button class="case-study-btn" data-case="pharanoa" type="button">Case study</button><a href="https://vrchat.com/home/world/wrld_eb587ae2-6b26-48e3-9d28-3afd4ad6f555" target="_blank" rel="noopener">Open world ↗</a></div>
+            <div class="project-actions"><button class="case-study-btn" data-case="pharanoa" type="button">Case study</button><a href="https://vrchat.com/home/world/wrld_eb587ae2-6b26-48e3-9d28-3afd4ad6f555" target="_blank" rel="noopener noreferrer">Open world ↗</a></div>
           </div>
         </article>
       </div>
@@ -148,12 +188,12 @@
         </div>
         <div class="photo-grid">
           <figure class="photo-card lightbox-item wide"><img src="assets/cathedral-angle-2.png" alt="The Celestial Church interior"><figcaption><strong>The Celestial Church</strong><span>Gothic environment · lighting · atmosphere</span></figcaption></figure>
-          <figure class="photo-card"><img src="assets/soras-home-2.png" alt="Sora's Home bedroom"><figcaption><strong>Sora’s Home</strong><span>Modern interior · social space</span></figcaption></figure>
-          <figure class="photo-card"><img src="assets/always-home-gallery.png" alt="Always Home apartment"><figcaption><strong>Always Home</strong><span>Industrial apartment · city view</span></figcaption></figure>
-          <figure class="photo-card"><img src="assets/forever-home-gallery.png" alt="Forever Home interior"><figcaption><strong>Forever Home</strong><span>Interactive comfort world · ambience</span></figcaption></figure>
+          <figure class="photo-card"><img src="assets/soras-home-2.jpg" alt="Sora's Home bedroom"><figcaption><strong>Sora’s Home</strong><span>Modern interior · social space</span></figcaption></figure>
+          <figure class="photo-card"><img src="assets/always-home-gallery.jpg" alt="Always Home apartment"><figcaption><strong>Always Home</strong><span>Industrial apartment · city view</span></figcaption></figure>
+          <figure class="photo-card"><img src="assets/forever-home-gallery.jpg" alt="Forever Home interior"><figcaption><strong>Forever Home</strong><span>Interactive comfort world · ambience</span></figcaption></figure>
           <figure class="photo-card"><img src="assets/fallen-2.png" alt="The Fallen sci-fi environment"><figcaption><strong>The Fallen</strong><span>Sci-fi mood · emissive lighting</span></figcaption></figure>
           <figure class="photo-card lightbox-item wide">
-              <img src="assets/abyss.png" alt="The Abyss environment view">
+              <img src="assets/abyss.jpg" alt="The Abyss environment view">
               <figcaption>
                 <strong>The Abyss</strong>
                 <span>Dark atmospheric environment · blue lighting</span>
@@ -170,9 +210,9 @@
           <p>Drag the slider to compare an earlier City Apartment version with the later rebuild.</p>
         </div>
         <div class="compare-wrap" id="compareWrap">
-          <img src="assets/city-apartment-2.png" alt="Later City Apartment rebuild" class="compare-base">
+          <img src="assets/city-2023-3.jpg" alt="Later City Apartment rebuild" class="compare-base">
           <div class="compare-overlay" id="compareOverlay">
-            <img src="assets/city-classic.png" alt="Earlier City Apartment Classic environment">
+            <img src="assets/city-2021-1.jpg" alt="Earlier City Apartment Classic environment">
           </div>
           <div class="compare-line" id="compareLine"><span></span></div>
           <input id="compareSlider" class="compare-slider" type="range" min="0" max="100" value="50" aria-label="Compare later and earlier City Apartment work">
@@ -188,22 +228,22 @@
           <p>Selected work above shows the strongest portfolio pieces. This archive links to all of my currently listed public VRChat worlds.</p>
         </div>
         <div class="world-grid">
-          <a class="world-card" href="https://vrchat.com/home/world/wrld_982338bf-95bd-44b3-9835-889b6d5310d0" target="_blank" rel="noopener"><img src="assets/industrial.png" alt="Always Home"><span>Always Home</span></a>
-          <a class="world-card" href="https://vrchat.com/home/world/wrld_d706a367-aac9-4f7a-a0b7-d98cb15f1990" target="_blank" rel="noopener"><img src="assets/abyss.png" alt="The Abyss"><span>The Abyss</span></a>
-          <a class="world-card" href="https://vrchat.com/home/world/wrld_a0b7a10c-58d0-48cb-b706-cd70f18e6245" target="_blank" rel="noopener"><img src="assets/cathedral-wide.png" alt="The Celestial Church"><span>The Celestial Church</span></a>
-          <a class="world-card" href="https://vrchat.com/home/world/wrld_3a5861b6-04fc-4a94-ac12-6e038881779a/info" target="_blank" rel="noopener"><img src="assets/city-classic.png" alt="City Apartment Classic"><span>City Apartment Classic</span></a>
-          <a class="world-card" href="https://vrchat.com/home/world/wrld_62626af7-42bc-417d-b304-29669956e076/info" target="_blank" rel="noopener"><img src="assets/silent-solitude.png" alt="Silent Solitude"><span>Silent Solitude</span></a>
-          <a class="world-card" href="https://vrchat.com/home/world/wrld_79f90fef-3a21-456a-91cd-02ba64f8e00b/info" target="_blank" rel="noopener"><img src="assets/fallen.png" alt="The Fallen"><span>The Fallen</span></a>
-          <a class="world-card" href="https://vrchat.com/home/world/wrld_8b814e1d-093e-4218-8f56-b76b6f4c257f/info" target="_blank" rel="noopener"><img src="assets/alone.png" alt="Alone"><span>Alone</span></a>
-          <a class="world-card" href="https://vrchat.com/home/world/wrld_eb587ae2-6b26-48e3-9d28-3afd4ad6f555/info" target="_blank" rel="noopener"><img src="assets/pharanoa.png" alt="Pharanoa"><span>Pharanoa</span></a>
-          <a class="world-card" href="https://vrchat.com/home/world/wrld_9763c049-00a6-46e4-be9c-22311de62b7e/info" target="_blank" rel="noopener"><img src="assets/kaitos-avis.png" alt="Kaito's Avis"><span>Kaito's Avis</span></a>
-          <a class="world-card" href="https://vrchat.com/home/world/wrld_5d021b7f-f4ea-4b8c-a367-ea5b64d6db5d/info" target="_blank" rel="noopener"><img src="assets/city-apartment-2.png" alt="City Apartment 2"><span>City Apartment 2</span></a>
-          <a class="world-card" href="https://vrchat.com/home/world/wrld_7bcd3bba-4360-44e8-b7f5-8bef5613d6a0/info" target="_blank" rel="noopener"><img src="assets/endless.png" alt="ENDLESS"><span>ENDLESS</span></a>
-          <a class="world-card" href="https://vrchat.com/home/world/wrld_46211cba-4b17-4576-aeca-20b83bb3c550/info" target="_blank" rel="noopener"><img src="assets/forever-home.png" alt="Forever Home"><span>Forever Home</span></a>
-          <a class="world-card" href="https://vrchat.com/home/world/wrld_067a1e12-0854-4926-b923-cbbc36b40b44/info" target="_blank" rel="noopener"><img src="assets/city-apartment.png" alt="City Apartment"><span>City Apartment</span></a>
-          <a class="world-card" href="https://vrchat.com/home/world/wrld_a94f142b-89a0-4c4a-894f-aa5a02d49c48/info" target="_blank" rel="noopener"><img src="assets/dream-haven.png" alt="DREAM HAVEN"><span>DREAM HAVEN</span></a>
-          <a class="world-card" href="https://vrchat.com/home/world/wrld_cbe3143c-1f66-42fd-a7b3-5bda3e1b8f87/info" target="_blank" rel="noopener"><img src="assets/family-mansion.png" alt="Family Mansion"><span>Family Mansion</span></a>
-          <a class="world-card" href="https://vrchat.com/home/world/wrld_07100f48-be87-47c9-afa9-6af2c5a1c4f2/info" target="_blank" rel="noopener"><img src="assets/soras-home.png" alt="Sora's Home"><span>Sora's Home</span></a>
+          <a class="world-card" href="https://vrchat.com/home/world/wrld_982338bf-95bd-44b3-9835-889b6d5310d0" target="_blank" rel="noopener noreferrer"><img src="assets/always-home-2.jpg" alt="Always Home"><span>Always Home</span></a>
+          <a class="world-card" href="https://vrchat.com/home/world/wrld_d706a367-aac9-4f7a-a0b7-d98cb15f1990" target="_blank" rel="noopener noreferrer"><img src="assets/abyss.jpg" alt="The Abyss"><span>The Abyss</span></a>
+          <a class="world-card" href="https://vrchat.com/home/world/wrld_a0b7a10c-58d0-48cb-b706-cd70f18e6245" target="_blank" rel="noopener noreferrer"><img src="assets/cathedral-angle-3.png" alt="The Celestial Church"><span>The Celestial Church</span></a>
+          <a class="world-card" href="https://vrchat.com/home/world/wrld_3a5861b6-04fc-4a94-ac12-6e038881779a/info" target="_blank" rel="noopener noreferrer"><img src="assets/city-2021-1.jpg" alt="City Apartment Classic"><span>City Apartment Classic</span></a>
+          <a class="world-card" href="https://vrchat.com/home/world/wrld_62626af7-42bc-417d-b304-29669956e076/info" target="_blank" rel="noopener noreferrer"><img src="assets/silent-solitude.jpg" alt="Silent Solitude"><span>Silent Solitude</span></a>
+          <a class="world-card" href="https://vrchat.com/home/world/wrld_79f90fef-3a21-456a-91cd-02ba64f8e00b/info" target="_blank" rel="noopener noreferrer"><img src="assets/fallen-2.png" alt="The Fallen"><span>The Fallen</span></a>
+          <a class="world-card" href="https://vrchat.com/home/world/wrld_8b814e1d-093e-4218-8f56-b76b6f4c257f/info" target="_blank" rel="noopener noreferrer"><img src="assets/alone.jpg" alt="Alone"><span>Alone</span></a>
+          <a class="world-card" href="https://vrchat.com/home/world/wrld_eb587ae2-6b26-48e3-9d28-3afd4ad6f555/info" target="_blank" rel="noopener noreferrer"><img src="assets/pharanoa.png" alt="Pharanoa"><span>Pharanoa</span></a>
+          <a class="world-card" href="https://vrchat.com/home/world/wrld_9763c049-00a6-46e4-be9c-22311de62b7e/info" target="_blank" rel="noopener noreferrer"><img src="assets/kaitos-avis.jpg" alt="Kaito's Avis"><span>Kaito's Avis</span></a>
+          <a class="world-card" href="https://vrchat.com/home/world/wrld_5d021b7f-f4ea-4b8c-a367-ea5b64d6db5d/info" target="_blank" rel="noopener noreferrer"><img src="assets/city-2023-3.jpg" alt="City Apartment 2"><span>City Apartment 2</span></a>
+          <a class="world-card" href="https://vrchat.com/home/world/wrld_7bcd3bba-4360-44e8-b7f5-8bef5613d6a0/info" target="_blank" rel="noopener noreferrer"><img src="assets/endless.jpg" alt="ENDLESS"><span>ENDLESS</span></a>
+          <a class="world-card" href="https://vrchat.com/home/world/wrld_46211cba-4b17-4576-aeca-20b83bb3c550/info" target="_blank" rel="noopener noreferrer"><img src="assets/forever-home.jpg" alt="Forever Home"><span>Forever Home</span></a>
+          <a class="world-card" href="https://vrchat.com/home/world/wrld_067a1e12-0854-4926-b923-cbbc36b40b44/info" target="_blank" rel="noopener noreferrer"><img src="assets/city-2022-1.jpg" alt="City Apartment"><span>City Apartment</span></a>
+          <a class="world-card" href="https://vrchat.com/home/world/wrld_a94f142b-89a0-4c4a-894f-aa5a02d49c48/info" target="_blank" rel="noopener noreferrer"><img src="assets/dream-haven.png" alt="DREAM HAVEN"><span>DREAM HAVEN</span></a>
+          <a class="world-card" href="https://vrchat.com/home/world/wrld_cbe3143c-1f66-42fd-a7b3-5bda3e1b8f87/info" target="_blank" rel="noopener noreferrer"><img src="assets/family-mansion.jpg" alt="Family Mansion"><span>Family Mansion</span></a>
+          <a class="world-card" href="https://vrchat.com/home/world/wrld_07100f48-be87-47c9-afa9-6af2c5a1c4f2/info" target="_blank" rel="noopener noreferrer"><img src="assets/soras-home-3.png" alt="Sora's Home"><span>Sora's Home</span></a>
         </div>
       </div>
     </section>
@@ -221,17 +261,17 @@
           <span>Community downloads</span>
         </div>
         <p>Free models, world resources and creator tools shared with the VRChat community.</p>
-        <a href="https://vrcmods.com/user/SoraKaito0" target="_blank" rel="noopener">View VRCMods profile ↗</a>
+        <a href="https://vrcmods.com/user/SoraKaito0" target="_blank" rel="noopener noreferrer">View VRCMods profile ↗</a>
       </div>
 
       <div class="asset-grid">
         <article class="asset-card reveal">
-          <div class="asset-image"><img src="assets/asset-forklift.png" alt="Forklift 3D model in multiple colour variations"></div>
+          <div class="asset-image"><img src="assets/asset-forklift.jpg" alt="Forklift 3D model in multiple colour variations"></div>
           <div class="asset-copy">
             <div class="asset-meta"><span>3D MODEL</span><span>BLENDER · UNITY</span></div>
             <h3>Forklift</h3>
             <p>An industrial prop released with multiple colour variations for use in warehouse, simulation and VR environments.</p>
-            <a href="https://vrcmods.com/item?id=11300" target="_blank" rel="noopener">View asset ↗</a>
+            <a href="https://vrcmods.com/item?id=11300" target="_blank" rel="noopener noreferrer">View asset ↗</a>
           </div>
         </article>
 
@@ -241,7 +281,7 @@
             <div class="asset-meta"><span>INTERACTIVE WORLD TOOL</span><span>UNITY · UDONSHARP</span></div>
             <h3>TouchPadV1</h3>
             <p>A multipurpose VRChat world-control interface built to manage settings and interactive systems from one in-world panel.</p>
-            <a href="https://vrcmods.com/item?id=10961" target="_blank" rel="noopener">View asset ↗</a>
+            <a href="https://vrcmods.com/item?id=10961" target="_blank" rel="noopener noreferrer">View asset ↗</a>
           </div>
         </article>
 
@@ -251,7 +291,7 @@
             <div class="asset-meta"><span>3D MODEL</span><span>PROP DESIGN</span></div>
             <h3>Bass Guitar</h3>
             <p>A detailed musical prop prepared as a Unity package for use in real-time scenes and VRChat projects.</p>
-            <a href="https://vrcmods.com/item?id=11138" target="_blank" rel="noopener">View asset ↗</a>
+            <a href="https://vrcmods.com/item?id=11138" target="_blank" rel="noopener noreferrer">View asset ↗</a>
           </div>
         </article>
 
@@ -261,27 +301,27 @@
             <div class="asset-meta"><span>INTERACTIVE PROP</span><span>VFX · AUDIO</span></div>
             <h3>Aincrad Crystal</h3>
             <p>A floating crystal display combining a stylised prop, gentle motion and an audio element as a small interactive scene piece.</p>
-            <a href="https://vrcmods.com/item?id=11096" target="_blank" rel="noopener">View asset ↗</a>
+            <a href="https://vrcmods.com/item?id=11096" target="_blank" rel="noopener noreferrer">View asset ↗</a>
           </div>
         </article>
 
         <article class="asset-card reveal">
-          <div class="asset-image"><img src="assets/asset-japanese-school.png" alt="Japanese school environment model"></div>
+          <div class="asset-image"><img src="assets/asset-japanese-school.jpg" alt="Japanese school environment model"></div>
           <div class="asset-copy">
             <div class="asset-meta"><span>ENVIRONMENT MODEL</span><span>ARCHITECTURE</span></div>
             <h3>Japanese School</h3>
             <p>An earlier multi-floor environment model that helped develop my architectural modelling and large-scale scene planning.</p>
-            <a href="https://vrcmods.com/item?id=11022" target="_blank" rel="noopener">View asset ↗</a>
+            <a href="https://vrcmods.com/item?id=11022" target="_blank" rel="noopener noreferrer">View asset ↗</a>
           </div>
         </article>
 
         <article class="asset-card reveal">
-          <div class="asset-image"><img src="assets/asset-avi-showcase.png" alt="Avi Showcase Room VRChat world template"></div>
+          <div class="asset-image"><img src="assets/asset-avi-showcase.jpg" alt="Avi Showcase Room VRChat world template"></div>
           <div class="asset-copy">
             <div class="asset-meta"><span>WORLD TEMPLATE</span><span>VRCHAT</span></div>
             <h3>Avi / Showcase Room</h3>
             <p>A clean showcase-space template designed as a flexible starting point for avatar displays and creator presentation worlds.</p>
-            <a href="https://vrcmods.com/item?id=10895" target="_blank" rel="noopener">View asset ↗</a>
+            <a href="https://vrcmods.com/item?id=10895" target="_blank" rel="noopener noreferrer">View asset ↗</a>
           </div>
         </article>
       </div>
@@ -293,12 +333,12 @@
           <p>Worlds, assets, videos and other experiments live across a few platforms. These are the useful public ones.</p>
         </div>
         <div class="network-links">
-          <a href="https://vrchat.com/home/user/usr_c0c936a4-5a79-4135-8d5a-2b01be1b22be" target="_blank" rel="noopener"><span>VRChat</span><small>Published worlds</small><b>↗</b></a>
-          <a href="https://vrcmods.com/user/SoraKaito0" target="_blank" rel="noopener"><span>VRCMods</span><small>Assets & downloads</small><b>↗</b></a>
-          <a href="https://www.youtube.com/channel/UCESVyRn_u4dp37N0q6TrwVA" target="_blank" rel="noopener"><span>YouTube</span><small>Video work</small><b>↗</b></a>
-          <a href="https://www.tiktok.com/@sorakaito0" target="_blank" rel="noopener"><span>TikTok</span><small>Project clips</small><b>↗</b></a>
-          <a href="https://sorakaito.gumroad.com/" target="_blank" rel="noopener"><span>Gumroad</span><small>Creator storefront</small><b>↗</b></a>
-          <a href="https://linktr.ee/sorakaito0" target="_blank" rel="noopener"><span>Linktree</span><small>Everything else</small><b>↗</b></a>
+          <a href="https://vrchat.com/home/user/usr_c0c936a4-5a79-4135-8d5a-2b01be1b22be" target="_blank" rel="noopener noreferrer"><span>VRChat</span><small>Published worlds</small><b>↗</b></a>
+          <a href="https://vrcmods.com/user/SoraKaito0" target="_blank" rel="noopener noreferrer"><span>VRCMods</span><small>Assets & downloads</small><b>↗</b></a>
+          <a href="https://www.youtube.com/channel/UCESVyRn_u4dp37N0q6TrwVA" target="_blank" rel="noopener noreferrer"><span>YouTube</span><small>Video work</small><b>↗</b></a>
+          <a href="https://www.tiktok.com/@sorakaito0" target="_blank" rel="noopener noreferrer"><span>TikTok</span><small>Project clips</small><b>↗</b></a>
+          <a href="https://sorakaito.gumroad.com/" target="_blank" rel="noopener noreferrer"><span>Gumroad</span><small>Creator storefront</small><b>↗</b></a>
+          <a href="https://linktr.ee/sorakaito0" target="_blank" rel="noopener noreferrer"><span>Linktree</span><small>Everything else</small><b>↗</b></a>
         </div>
       </div>
     </section>
@@ -338,11 +378,11 @@
         <p>The videos are embedded here so they can be played without leaving the portfolio.</p>
       </div>
       <div class="video-grid reveal">
-        <article class="video-card"><div class="video-frame"><iframe src="https://www.tiktok.com/player/v1/7646043342236634390?autoplay=0&loop=0" title="College Project 01" allow="fullscreen" loading="lazy"></iframe></div><h3>College Project 01</h3><p>College project showcase.</p></article>
-        <article class="video-card"><div class="video-frame"><iframe src="https://www.tiktok.com/player/v1/7576012576170052886?autoplay=0&loop=0" title="College Project 02" allow="fullscreen" loading="lazy"></iframe></div><h3>College Project 02</h3><p>College project showcase.</p></article>
-        <article class="video-card"><div class="video-frame"><iframe src="https://www.tiktok.com/player/v1/7503596230799346966?autoplay=0&loop=0" title="College Project 03" allow="fullscreen" loading="lazy"></iframe></div><h3>College Project 03</h3><p>College project showcase.</p></article>
-        <article class="video-card"><div class="video-frame"><iframe src="https://www.tiktok.com/player/v1/7581279851500571927?autoplay=0&loop=0" title="VRChat World Video 01" allow="fullscreen" loading="lazy"></iframe></div><h3>VRChat World Video 01</h3><p>World-building and environment work.</p></article>
-        <article class="video-card"><div class="video-frame"><iframe src="https://www.tiktok.com/player/v1/7302049778169400609?autoplay=0&loop=0" title="VRChat World Video 02" allow="fullscreen" loading="lazy"></iframe></div><h3>VRChat World Video 02</h3><p>VRChat environment showcase.</p></article>
+        <article class="video-card"><div class="video-frame"><iframe src="https://www.tiktok.com/player/v1/7646043342236634390?autoplay=0&loop=0" title="College Project 01" allow="fullscreen" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div><h3>College Project 01</h3><p>College project showcase.</p></article>
+        <article class="video-card"><div class="video-frame"><iframe src="https://www.tiktok.com/player/v1/7576012576170052886?autoplay=0&loop=0" title="College Project 02" allow="fullscreen" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div><h3>College Project 02</h3><p>College project showcase.</p></article>
+        <article class="video-card"><div class="video-frame"><iframe src="https://www.tiktok.com/player/v1/7503596230799346966?autoplay=0&loop=0" title="College Project 03" allow="fullscreen" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div><h3>College Project 03</h3><p>College project showcase.</p></article>
+        <article class="video-card"><div class="video-frame"><iframe src="https://www.tiktok.com/player/v1/7581279851500571927?autoplay=0&loop=0" title="VRChat World Video 01" allow="fullscreen" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div><h3>VRChat World Video 01</h3><p>World-building and environment work.</p></article>
+        <article class="video-card"><div class="video-frame"><iframe src="https://www.tiktok.com/player/v1/7302049778169400609?autoplay=0&loop=0" title="VRChat World Video 02" allow="fullscreen" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div><h3>VRChat World Video 02</h3><p>VRChat environment showcase.</p></article>
       </div>
     </section>
 
@@ -352,7 +392,7 @@
           <p class="eyebrow">CONTACT</p>
           <div class="availability-pill"><span></span> Open to junior 3D / environment art opportunities</div>
           <h2>Have a project, role or idea in mind?</h2>
-          <p>Send me a message below. The form prepares an email to me so you can review it before sending.</p>
+          <p>Send me a message below. It is submitted securely from this page and delivered to my email.</p>
         </div>
 
         <div class="contact-layout">
@@ -361,11 +401,11 @@
             <input type="hidden" name="_subject" value="New portfolio enquiry — reecemartin3d.com">
             <input type="hidden" name="_template" value="table">
             <div class="form-row">
-              <label><span>Name</span><input type="text" id="contactName" name="name" autocomplete="name" placeholder="Your name" required></label>
-              <label><span>Email</span><input type="email" id="contactEmail" name="email" autocomplete="email" placeholder="you@example.com" required></label>
+              <label><span>Name</span><input type="text" id="contactName" name="name" autocomplete="name" placeholder="Your name" maxlength="80" required></label>
+              <label><span>Email</span><input type="email" id="contactEmail" name="email" autocomplete="email" placeholder="you@example.com" maxlength="254" required></label>
             </div>
-            <label><span>Subject</span><input type="text" id="contactSubject" name="subject" placeholder="Environment art opportunity"></label>
-            <label><span>Message</span><textarea id="contactMessage" name="message" rows="7" placeholder="Tell me a little about the role, project or what you'd like to discuss..." required></textarea></label>
+            <label><span>Subject</span><input type="text" id="contactSubject" name="subject" placeholder="Environment art opportunity" maxlength="160"></label>
+            <label><span>Message</span><textarea id="contactMessage" name="message" rows="7" placeholder="Tell me a little about the role, project or what you'd like to discuss..." maxlength="4000" required></textarea></label>
             <div class="form-actions">
               <button type="submit" class="btn primary">Send message ↗</button>
               <small class="form-status" id="contactStatus" aria-live="polite">Sends securely from this page.</small>
@@ -376,8 +416,8 @@
             <p class="contact-label">DIRECT</p>
             <div class="email-row"><a class="contact-big" href="mailto:rmartin@stephen-martin.com">rmartin@stephen-martin.com</a><button class="copy-email" type="button" data-email="rmartin@stephen-martin.com">Copy</button></div>
             <div class="contact-links">
-              <a href="https://vrchat.com/home/user/usr_c0c936a4-5a79-4135-8d5a-2b01be1b22be" target="_blank" rel="noopener">VRChat Profile ↗</a>
-              <a href="https://linktr.ee/sorakaito0" target="_blank" rel="noopener">All Links ↗</a>
+              <a href="https://vrchat.com/home/user/usr_c0c936a4-5a79-4135-8d5a-2b01be1b22be" target="_blank" rel="noopener noreferrer">VRChat Profile ↗</a>
+              <a href="https://linktr.ee/sorakaito0" target="_blank" rel="noopener noreferrer">All Links ↗</a>
             </div>
             <div class="contact-note">
               <span>Based in</span>
@@ -405,9 +445,9 @@
         <input type="text" name="_honey" class="honey-field" tabindex="-1" autocomplete="off" aria-hidden="true">
         <input type="hidden" name="_subject" value="Quick message from reecemartin3d.com">
         <input type="hidden" name="_template" value="table">
-        <label><span>Name</span><input name="name" type="text" placeholder="Your name" required></label>
-        <label><span>Email</span><input name="email" type="email" placeholder="you@example.com" required></label>
-        <label><span>Message</span><textarea name="message" rows="5" placeholder="What would you like to talk about?" required></textarea></label>
+        <label><span>Name</span><input name="name" type="text" placeholder="Your name" maxlength="80" required></label>
+        <label><span>Email</span><input name="email" type="email" placeholder="you@example.com" maxlength="254" required></label>
+        <label><span>Message</span><textarea name="message" rows="5" placeholder="What would you like to talk about?" maxlength="4000" required></textarea></label>
         <button class="btn primary" type="submit">Send message</button>
         <p class="chat-form-status" id="quickMessageStatus" aria-live="polite"></p>
       </form>
