@@ -1,0 +1,35 @@
+name: Update VRChat world data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 */6 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-vrchat-world-data
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Refresh public world information
+        run: node scripts/update-world-data.mjs
+      - name: Save changed statistics
+        run: |
+          if git diff --quiet -- world-data.json; then
+            echo "World data is already current."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add world-data.json
+          git commit -m "Update VRChat world statistics"
+          git push

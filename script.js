@@ -336,3 +336,45 @@ document.querySelectorAll(".case-study-btn").forEach(b=>b.addEventListener("clic
 document.addEventListener("keydown",e=>{if(e.key==="Escape"){closeLightbox();closeCase();closeChat()}if(lightbox?.classList.contains("open")&&e.key==="ArrowLeft")showLightbox(lightboxIndex-1);if(lightbox?.classList.contains("open")&&e.key==="ArrowRight")showLightbox(lightboxIndex+1)});
 
 document.querySelectorAll(".v10-case-hero[role=button]").forEach(el=>el.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();openCase(el.dataset.case)}}));
+
+const worldDescriptions={
+  "Always Home":"A compact industrial apartment combining exposed pipework, brick, warm timber and a city-night backdrop. Designed as a comfortable shared social space with a practical VR-friendly layout.",
+  "The Abyss":"A dark atmospheric environment built around deep blue lighting, scale and an isolated otherworldly mood.",
+  "The Celestial Church":"A large Gothic ceremonial environment focused on architectural composition, warm candlelight and dramatic atmosphere. Created for PC and Quest using Blender, Substance Painter and Unity.",
+  "City Apartment Classic":"The original 2021 version of my industrial loft concept, featuring an open mezzanine layout, exposed brick and warm sunset lighting.",
+  "Silent Solitude":"A quiet, low-light environment designed around isolation, stillness and a restrained atmospheric presentation.",
+  "The Fallen":"A science-fiction environment using dark architecture and strong emissive lighting to create a mysterious, cinematic mood.",
+  "Alone":"An atmospheric personal world exploring solitude through lighting, environment composition and a deliberately quiet setting.",
+  "Pharanoa":"An experimental environment centred on a bright green energy effect, high contrast and emissive visual storytelling.",
+  "Kaito's Avis":"A VRChat showcase environment created to display avatar work in a dedicated, easy-to-browse space.",
+  "City Apartment 2":"The final 2023 rebuild of my City Apartment series, with a more cohesive layout, warmer material palette and more developed lighting.",
+  "ENDLESS":"An abstract atmospheric world focused on visual scale, mood and the feeling of an environment extending beyond the player.",
+  "Forever Home":"A dark comfort-focused social environment with customisable weather, sound, lighting and visual controls.",
+  "City Apartment":"The second 2022 version of my recurring apartment concept, pushing the original toward darker lighting and more developed environmental detail.",
+  "DREAM HAVEN":"A dreamlike social environment designed as a calm escape, using soft atmosphere and environmental mood as its main focus.",
+  "Family Mansion":"A large residential social world built around mansion-style interior spaces and areas for groups to spend time together.",
+  "Sora's Home":"A modern personal home environment with an open social layout, comfortable rooms and sunset views used throughout the composition."
+};
+
+const worldModal=document.getElementById("worldModal"),worldModalImage=document.getElementById("worldModalImage"),worldModalTitle=document.getElementById("worldModalTitle"),worldModalDescription=document.getElementById("worldModalDescription"),worldModalLink=document.getElementById("worldModalLink");
+let liveWorldData={},currentWorldId=null;
+fetch("world-data.json",{cache:"no-cache"}).then(r=>r.ok?r.json():Promise.reject()).then(data=>{liveWorldData=data.worlds||{};if(currentWorldId&&worldModal?.classList.contains("open"))populateWorldFacts(currentWorldId)}).catch(()=>{});
+const worldField=id=>document.getElementById(id);
+const formatNumber=value=>Number.isFinite(Number(value))?new Intl.NumberFormat("en-GB").format(Number(value)):"—";
+const formatDate=value=>{if(!value||value==="none")return "Not yet published";const d=new Date(value);return Number.isNaN(d.valueOf())?"—":new Intl.DateTimeFormat("en-GB",{day:"numeric",month:"long",year:"numeric"}).format(d)};
+const statusLabel=data=>data?.isLabs?"Community Labs":data?.releaseStatus==="public"?"Public":data?.releaseStatus==="private"?"Private":"Unknown";
+function populateWorldFacts(id){
+  const data=liveWorldData[id]||{};
+  worldModalDescription.textContent=data.description||worldDescriptions[worldModalTitle.textContent]||"A public environment from my VRChat world-building archive.";
+  worldField("worldModalVisits").textContent=formatNumber(data.visits);worldField("worldModalFavorites").textContent=formatNumber(data.favorites);worldField("worldModalCapacity").textContent=formatNumber(data.capacity);worldField("worldModalStatus").textContent=statusLabel(data);worldField("worldModalRecommended").textContent=formatNumber(data.recommendedCapacity);worldField("worldModalPublished").textContent=formatDate(data.publicationDate||data.labsPublicationDate);worldField("worldModalVersion").textContent=formatNumber(data.version);worldField("worldModalUnity").textContent=(data.unityVersions||[]).join(" · ")||"—";worldField("worldModalScan").textContent=data.scanPassed?"Passed":"—";
+  const names={standalonewindows:"PC",android:"Quest / Android",ios:"iOS"};worldField("worldModalPlatforms").innerHTML=(data.platforms||[]).map(p=>`<span>${names[p]||p}</span>`).join("");worldField("worldModalFreshness").textContent=data.dataUpdatedAt?`VRChat data refreshed ${formatDate(data.dataUpdatedAt)}`:"Showing saved portfolio information";worldModalLink.hidden=data.releaseStatus==="private";
+}
+let lastWorldCard=null;
+function openWorldPreview(card){
+  const image=card.querySelector("img"),title=card.querySelector("span")?.textContent.trim()||image?.alt||"VRChat World";
+  const id=(card.href.match(/wrld_[a-f0-9-]+/i)||[])[0];currentWorldId=id;lastWorldCard=card;worldModalTitle.textContent=title;worldModalImage.src=image?.src||"";worldModalImage.alt=`${title} environment preview`;worldModalLink.href=card.href;populateWorldFacts(id);worldModal.classList.add("open");worldModal.setAttribute("aria-hidden","false");document.body.style.overflow="hidden";document.getElementById("worldClose")?.focus();
+}
+function closeWorldPreview(){worldModal?.classList.remove("open");worldModal?.setAttribute("aria-hidden","true");document.body.style.overflow="";lastWorldCard?.focus()}
+document.querySelectorAll(".world-card").forEach(card=>card.addEventListener("click",e=>{e.preventDefault();openWorldPreview(card)}));
+document.getElementById("worldClose")?.addEventListener("click",closeWorldPreview);document.getElementById("worldModalBack")?.addEventListener("click",closeWorldPreview);worldModal?.addEventListener("click",e=>{if(e.target===worldModal)closeWorldPreview()});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&worldModal?.classList.contains("open"))closeWorldPreview()});
