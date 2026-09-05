@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04T20:44:33.898Z",
+  "updatedAt": "2026-09-05T04:25:50.355Z",
   "worlds": {
     "wrld_982338bf-95bd-44b3-9835-889b6d5310d0": {
       "id": "wrld_982338bf-95bd-44b3-9835-889b6d5310d0",
@@ -31,7 +31,7 @@
         "2022.3.22f1"
       ],
       "scanPassed": true,
-      "dataUpdatedAt": "2026-09-04T20:44:33.898Z"
+      "dataUpdatedAt": "2026-09-05T04:25:50.355Z"
     },
     "wrld_d706a367-aac9-4f7a-a0b7-d98cb15f1990": {
       "id": "wrld_d706a367-aac9-4f7a-a0b7-d98cb15f1990",
@@ -39,7 +39,7 @@
       "description": "A safe place where you can forget about your problems and focus on the moment․",
       "releaseStatus": "public",
       "isLabs": false,
-      "visits": 71014,
+      "visits": 71032,
       "favorites": 3068,
       "capacity": 45,
       "recommendedCapacity": 20,
@@ -64,7 +64,7 @@
         "2022.3.22f1"
       ],
       "scanPassed": true,
-      "dataUpdatedAt": "2026-09-04T20:44:33.898Z"
+      "dataUpdatedAt": "2026-09-05T04:25:50.355Z"
     },
     "wrld_a0b7a10c-58d0-48cb-b706-cd70f18e6245": {
       "id": "wrld_a0b7a10c-58d0-48cb-b706-cd70f18e6245",
@@ -72,8 +72,8 @@
       "description": "The Celestial Church is a fantasy-style world filled with beauty‚ love‚ and gentle serenity․ Its sacred halls glow with soft celestial light‚ inviting all who enter to relax‚ reflect‚ and feel at peace․ This is a place where visitors can come together‚ unite in harmony‚ and share moments of joy and happiness․ Whether you seek comfort‚ connection‚ or simply a tranquil escape‚ The Celestial Church welcomes you",
       "releaseStatus": "public",
       "isLabs": false,
-      "visits": 26164,
-      "favorites": 1615,
+      "visits": 26188,
+      "favorites": 1613,
       "capacity": 80,
       "recommendedCapacity": 20,
       "publicationDate": "2025-12-08T16:20:23.918Z",
@@ -95,7 +95,7 @@
         "2022.3.22f1"
       ],
       "scanPassed": true,
-      "dataUpdatedAt": "2026-09-04T20:44:33.898Z"
+      "dataUpdatedAt": "2026-09-05T04:25:50.355Z"
     },
     "wrld_3a5861b6-04fc-4a94-ac12-6e038881779a": {
       "id": "wrld_3a5861b6-04fc-4a94-ac12-6e038881779a",
@@ -125,7 +125,7 @@
         "2019.4.31f1"
       ],
       "scanPassed": true,
-      "dataUpdatedAt": "2026-09-04T20:44:33.898Z"
+      "dataUpdatedAt": "2026-09-05T04:25:50.355Z"
     },
     "wrld_62626af7-42bc-417d-b304-29669956e076": {
       "id": "wrld_62626af7-42bc-417d-b304-29669956e076",
@@ -133,7 +133,7 @@
       "description": "A cozy‚ quiet place with a view of the cloudy sky‚ perfect for a peaceful moment․",
       "releaseStatus": "public",
       "isLabs": false,
-      "visits": 34056,
+      "visits": 34057,
       "favorites": 872,
       "capacity": 32,
       "recommendedCapacity": 16,
@@ -156,7 +156,7 @@
         "2022.3.22f1"
       ],
       "scanPassed": true,
-      "dataUpdatedAt": "2026-09-04T20:44:33.898Z"
+      "dataUpdatedAt": "2026-09-05T04:25:50.355Z"
     },
     "wrld_79f90fef-3a21-456a-91cd-02ba64f8e00b": {
       "id": "wrld_79f90fef-3a21-456a-91cd-02ba64f8e00b",
@@ -187,7 +187,7 @@
         "2022.3.6f1"
       ],
       "scanPassed": true,
-      "dataUpdatedAt": "2026-09-04T20:44:33.898Z"
+      "dataUpdatedAt": "2026-09-05T04:25:50.355Z"
     },
     "wrld_8b814e1d-093e-4218-8f56-b76b6f4c257f": {
       "id": "wrld_8b814e1d-093e-4218-8f56-b76b6f4c257f",
@@ -195,7 +195,7 @@
       "description": "Cruising a never-ending Highway‚ wrapped in winter thoughts‚ soothed by gentle tunes․ Music that whispers peace․",
       "releaseStatus": "public",
       "isLabs": false,
-      "visits": 16564,
+      "visits": 16567,
       "favorites": 632,
       "capacity": 40,
       "recommendedCapacity": 16,
@@ -219,7 +219,7 @@
         "2022.3.6f1"
       ],
       "scanPassed": true,
-      "dataUpdatedAt": "2026-09-04T20:44:33.898Z"
+      "dataUpdatedAt": "2026-09-05T04:25:50.355Z"
     },
     "wrld_eb587ae2-6b26-48e3-9d28-3afd4ad6f555": {
       "id": "wrld_eb587ae2-6b26-48e3-9d28-3afd4ad6f555",
@@ -249,7 +249,7 @@
         "2022.3.6f1"
       ],
       "scanPassed": true,
-      "dataUpdatedAt": "2026-09-04T20:44:33.898Z"
+      "dataUpdatedAt": "2026-09-05T04:25:50.355Z"
     },
     "wrld_9763c049-00a6-46e4-be9c-22311de62b7e": {
       "id": "wrld_9763c049-00a6-46e4-be9c-22311de62b7e",
@@ -278,7 +278,7 @@
         "2022.3.6f1"
       ],
       "scanPassed": true,
-      "dataUpdatedAt": "2026-09-04T20:44:33.898Z"
+      "dataUpdatedAt": "2026-09-05T04:25:50.355Z"
     },
     "wrld_5d021b7f-f4ea-4b8c-a367-ea5b64d6db5d": {
       "id": "wrld_5d021b7f-f4ea-4b8c-a367-ea5b64d6db5d",
@@ -286,7 +286,7 @@
       "description": "Welcome to my Apartment‚ a place to chill after a long day․ I do hope you enjoy you're stayǃ",
       "releaseStatus": "public",
       "isLabs": false,
-      "visits": 6435,
+      "visits": 6436,
       "favorites": 277,
       "capacity": 80,
       "recommendedCapacity": 40,
@@ -308,7 +308,7 @@
         "2022.3.6f1"
       ],
       "scanPassed": true,
-      "dataUpdatedAt": "2026-09-04T20:44:33.898Z"
+      "dataUpdatedAt": "2026-09-05T04:25:50.355Z"
     },
     "wrld_7bcd3bba-4360-44e8-b7f5-8bef5613d6a0": {
       "id": "wrld_7bcd3bba-4360-44e8-b7f5-8bef5613d6a0",
@@ -337,7 +337,7 @@
         "2022.3.6f1"
       ],
       "scanPassed": true,
-      "dataUpdatedAt": "2026-09-04T20:44:33.898Z"
+      "dataUpdatedAt": "2026-09-05T04:25:50.355Z"
     },
     "wrld_46211cba-4b17-4576-aeca-20b83bb3c550": {
       "id": "wrld_46211cba-4b17-4576-aeca-20b83bb3c550",
@@ -368,7 +368,7 @@
         "2022.3.6f1"
       ],
       "scanPassed": true,
-      "dataUpdatedAt": "2026-09-04T20:44:33.898Z"
+      "dataUpdatedAt": "2026-09-05T04:25:50.355Z"
     },
     "wrld_067a1e12-0854-4926-b923-cbbc36b40b44": {
       "id": "wrld_067a1e12-0854-4926-b923-cbbc36b40b44",
@@ -376,7 +376,7 @@
       "description": "Welcome to my Apartment‚ a place to chill after a long day․ I do hope you enjoy you're stayǃ",
       "releaseStatus": "public",
       "isLabs": false,
-      "visits": 17149,
+      "visits": 17153,
       "favorites": 382,
       "capacity": 32,
       "recommendedCapacity": 16,
@@ -393,7 +393,7 @@
         "2019.4.31f1"
       ],
       "scanPassed": true,
-      "dataUpdatedAt": "2026-09-04T20:44:33.898Z"
+      "dataUpdatedAt": "2026-09-05T04:25:50.355Z"
     },
     "wrld_a94f142b-89a0-4c4a-894f-aa5a02d49c48": {
       "id": "wrld_a94f142b-89a0-4c4a-894f-aa5a02d49c48",
@@ -424,7 +424,7 @@
         "2019.4.31f1"
       ],
       "scanPassed": true,
-      "dataUpdatedAt": "2026-09-04T20:44:33.898Z"
+      "dataUpdatedAt": "2026-09-05T04:25:50.355Z"
     },
     "wrld_cbe3143c-1f66-42fd-a7b3-5bda3e1b8f87": {
       "id": "wrld_cbe3143c-1f66-42fd-a7b3-5bda3e1b8f87",
@@ -449,7 +449,7 @@
         "2018.4.20f1"
       ],
       "scanPassed": true,
-      "dataUpdatedAt": "2026-09-04T20:44:33.898Z"
+      "dataUpdatedAt": "2026-09-05T04:25:50.355Z"
     },
     "wrld_07100f48-be87-47c9-afa9-6af2c5a1c4f2": {
       "id": "wrld_07100f48-be87-47c9-afa9-6af2c5a1c4f2",
@@ -479,7 +479,7 @@
         "2018.4.20f1"
       ],
       "scanPassed": true,
-      "dataUpdatedAt": "2026-09-04T20:44:33.898Z"
+      "dataUpdatedAt": "2026-09-05T04:25:50.355Z"
     }
   }
 }
